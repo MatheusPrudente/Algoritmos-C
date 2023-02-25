@@ -1,4 +1,4 @@
-/* 
+/*
     Faça um programa que peça 2 números inteiros e um
     número real. Calcule e mostre:
 

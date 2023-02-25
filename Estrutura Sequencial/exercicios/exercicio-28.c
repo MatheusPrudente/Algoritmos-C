@@ -1,6 +1,6 @@
 /*
-    Faça  um  programa que  receba  o  número  de  horas  trabalhadas, 
-    o  valor  do  salário mínimo  e  o  número  de  horas  extras  trabalhadas, 
+    Faça  um  programa que  receba  o  número  de  horas  trabalhadas,
+    o  valor  do  salário mínimo  e  o  número  de  horas  extras  trabalhadas,
     calcule  e  mostre  o  salário  líquido,  de acordo com as regras a seguir:
 
         a) A hora normal trabalhada vale 0.5% do salário mínimo;

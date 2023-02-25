@@ -1,5 +1,5 @@
-/* 
-    Fazer  um programa que  leia  um  número  inteiro  e  escreva  
+/*
+    Fazer  um programa que  leia  um  número  inteiro  e  escreva
     o  seu  antecessor  e  o seu sucessor.
 */
 

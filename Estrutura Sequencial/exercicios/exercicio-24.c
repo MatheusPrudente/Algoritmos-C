@@ -1,6 +1,6 @@
 /*
-    Faça  um programa que  calcule a média 
-    harmônica de  três  valores dada pela 
+    Faça  um programa que  calcule a média
+    harmônica de  três  valores dada pela
     fórmula (a, b e c representam os valores):
 */
 #include "stdio.h"

@@ -1,6 +1,6 @@
 /*
-    Faça  um programa que  leia  o  número  de  um  vendedor, 
-    o  seu  salário  fixo,  o  total  de vendas  (em  reais) 
+    Faça  um programa que  leia  o  número  de  um  vendedor,
+    o  seu  salário  fixo,  o  total  de vendas  (em  reais)
     por  ele  efetuadas  e  o  percentual  que  ganha  sobre  o  total  de  vendas,
     calcule o salário
     total do vendedor e escreva o número e o salário do vendedor.

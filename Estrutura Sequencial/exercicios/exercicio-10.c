@@ -1,5 +1,5 @@
 /*
-    Faça  um programa que  receba  o  ano  de  nascimento  de  uma  pessoa  e 
+    Faça  um programa que  receba  o  ano  de  nascimento  de  uma  pessoa  e
     o  ano  atual, calcule e mostre: a idade dessa pessoa e quanto anos essa
     pessoa terá em 2030.
 */
