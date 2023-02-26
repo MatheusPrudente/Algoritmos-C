@@ -1,94 +1,69 @@
-/*Faça um programa que solicite o total gasto pelo cliente de uma loja, 
-imprima as opções de pagamento, 
-solicite a opção desejada e imprime o valor total das prestações (se houverem).
+/*Faï¿½a um programa que solicite o total gasto pelo cliente de uma loja,
+imprima as opï¿½ï¿½es de pagamento,
+solicite a opï¿½ï¿½o desejada e imprime o valor total das prestaï¿½ï¿½es (se houverem).
 
-Opção 1: A vista com 10% de desconto.
-Opção 2: Em duas vezes (preço da etiqueta).
-Opção 3: De 3 até 10 vezes com 3% de juros ao mês (somente para compras acima de R$ 100,00).
-Faça uma função que imprime as opções, 
-solicite a opção desejada e retorne a opção escolhida.
- No programa principal, teste a opção escolhida e ativar a função correspondente (uma função para cada opção).*/
- 
+Opï¿½ï¿½o 1: A vista com 10% de desconto.
+Opï¿½ï¿½o 2: Em duas vezes (preï¿½o da etiqueta).
+Opï¿½ï¿½o 3: De 3 atï¿½ 10 vezes com 3% de juros ao mï¿½s (somente para compras acima de R$ 100,00).
+Faï¿½a uma funï¿½ï¿½o que imprime as opï¿½ï¿½es,
+solicite a opï¿½ï¿½o desejada e retorne a opï¿½ï¿½o escolhida.
+ No programa principal, teste a opï¿½ï¿½o escolhida e ativar a funï¿½ï¿½o correspondente (uma funï¿½ï¿½o para cada opï¿½ï¿½o).*/
+
 #include "stdio.h"
 
 int menuOpcao(float valor){
-	
-	int opcao = 0;
-	
-    
-	printf("\n\n------ menu de opcao --------\n\n"); 
-	
-	printf("Opcao 1: pagamento a vista.\n");	
-	printf("Opcao 2: pagamento em 2X\n");	
+    int opcao = 0;
 
-	
-	if (valor > 100){
-		printf("Opcao 3: pagamento em 3X ou mais\n");	
-	}
-	
-	return opcao;
-	
+    printf("\n\n------ menu de opcao --------\n\n");
+    printf("Opcao 1: pagamento a vista.\n");
+    printf("Opcao 2: pagamento em 2X\n");
 
+    if (valor > 100){
+        printf("Opcao 3: pagamento em 3X ou mais\n");
+    }
+
+    return opcao;
 }
- 
+
 void aVista(float valor){
-	
-	valor = valor - (valor*10/100);
-	printf("\nValor final : 1 X %.2f", valor);
-    
+    valor = valor - (valor*10/100);
+    printf("\nValor final : 1 X %.2f", valor);
 }
- 
+
 void duasVezes(float valor){
-	
-	printf("\nValor final : 2 X %.2f",valor);
-	
+    printf("\nValor final : 2 X %.2f",valor);
 }
 
 void tresVezesOuMais(float valor){
-	
-	int parcela = 0;
-	int i ;
-	
-	printf("Informe o numero de parcelas : ");
-	scanf("%d", &parcela);
-	
-	valor = valor+(valor*3/100);
-	
-	printf("\nValor final : %d X %.2f",parcela,valor/parcela);
+    int parcela = 0;
+    int i ;
 
+    printf("Informe o numero de parcelas : ");
+    scanf("%d", &parcela);
+    valor = valor+(valor*3/100);
 
+    printf("\nValor final : %d X %.2f",parcela,valor/parcela);
 }
 
 void main(){
-	
-	float valor = 0;
-	
-	printf("------ Compras --------\n\n"); 
-	
-	printf("Informe o valor das compras: ");
-	scanf("%f", &valor);
-	
-	int opcao = menuOpcao(valor);
-	
-	printf("\nInforme a opcao desejada : ");
-	scanf("%d", &opcao);
-	
-	
-	if (opcao == 1){
-	
-		aVista(valor);
-		
-	}
-		else if(opcao == 2){
-			
-			duasVezes(valor);
-			
-		}
-		else if(opcao == 3 && valor > 100){
-			tresVezesOuMais(valor);
-			
-		}
-			else {
-				printf("Opcao invalida");
-			}
-} 
+    float valor = 0;
+
+    printf("------ Compras --------\n\n");
+    printf("Informe o valor das compras: ");
+    scanf("%f", &valor);
+
+    int opcao = menuOpcao(valor);
+
+    printf("\nInforme a opcao desejada : ");
+    scanf("%d", &opcao);
+
+    if (opcao == 1){
+        aVista(valor);
+    } else if(opcao == 2){
+        duasVezes(valor);
+    } else if(opcao == 3 && valor > 100){
+        tresVezesOuMais(valor);
+    } else {
+        printf("Opcao invalida");
+    }
+}

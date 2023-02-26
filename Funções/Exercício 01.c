@@ -8,21 +8,15 @@ void enesimaPotencia(int x, int potencia){
     int i;
     int resultado = 1;
 
-
-   for(i = 1; i <= potencia; i++){
+    for(i = 1; i <= potencia; i++){
         resultado = resultado * x;
-
-   }
+    }
 
     printf("\n\n------ Resultado --------\n\n");
     printf("  %d elevado a %d : %d",x,potencia,resultado);
-
-
-
  }
 
  void main(){
-
      int x;
      int potencia;
 
